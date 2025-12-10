@@ -375,6 +375,9 @@ Si tienes preguntas:
 
 ## Reconocimientos
 
-Todos los contribuidores serán listados en el archivo CONTRIBUTORS.md.
+Todos los contribuidores son reconocidos a través de:
+- GitHub Contributors page
+- Commits en el historial del proyecto
+- Menciones en releases notes
 
 ¡Gracias por contribuir! 🎉
