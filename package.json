@@ -1,0 +1,58 @@
+{
+  "name": "r-facturacion-electronica",
+  "version": "0.1.0",
+  "description": "Sistema de Agentes de Facturación Electrónica con n8n",
+  "main": "index.js",
+  "scripts": {
+    "start": "n8n start",
+    "dev": "n8n start --tunnel",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration",
+    "test:e2e": "jest tests/e2e",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "format": "prettier --write \"src/**/*.{js,json,md}\"",
+    "export:workflows": "bash src/scripts/export-all-workflows.sh",
+    "import:workflows": "bash src/scripts/import-workflows.sh",
+    "backup": "bash src/scripts/backup.sh",
+    "validate:config": "node src/scripts/validate-config.js"
+  },
+  "keywords": [
+    "n8n",
+    "facturacion",
+    "electronica",
+    "automation",
+    "workflow",
+    "DIAN",
+    "Colombia"
+  ],
+  "author": "Stiven9710",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stiven9710/R_Facturacion_Electronica.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Stiven9710/R_Facturacion_Electronica/issues"
+  },
+  "homepage": "https://github.com/Stiven9710/R_Facturacion_Electronica#readme",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "@types/node": "^18.0.0",
+    "supertest": "^6.3.0",
+    "nock": "^13.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "axios": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
